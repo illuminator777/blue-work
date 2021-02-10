@@ -1,46 +1,117 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-@import '/css/bootstrap.min.css';
+
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
 
-html {
-    line-height: 1;
+p {
+    margin: 0;
+    padding: .3rem;
 }
 
 :root {
-   --color-main: rgb(55 130 255 /1);
-   --color-dark: rgb(25 65 120 /1);
-   --color-light: rgb(240 250 255 /1);
-   --color-white: rgb(255 255 255 /.95);
-   --color-black: rgb(90 90 90 /1);
-   --color-neutral: rgb(210 215 225 /1);
-   --color-gray: rgb(245 245 245 /1);
-   --color-logo: rgb(245 245 255 /.5);
-   --gradient: linear-gradient(45deg, rgba(55,130,255,1)
-                                 10%, rgba(70,160,255,1)
-                                 25%, rgba(65,140,255,1)
-                                 55%, rgba(55,130,255,1)
-                                 70%, rgba(55,130,255,1)
+   --color-main: rgba(55, 130, 255, 1);
+   --color-dark: rgba(25, 65, 120, 1);
+   --color-light: rgba(240, 250, 255, 1);
+   --color-white: rgba(255, 255, 255, 1);
+   --color-black: rgba(90, 90, 90, 1);
+   --color-neutral: rgba(210, 215, 225, 1);
+   --color-gray: rgba(245, 245, 245, 1);
+   --color-logo: rgba(245, 245, 255, .5);
+
+   --color-shadow: rgb(30, 30, 30, .4);
+   --color-none: rgba(255, 255, 255, 0);
+   --color-focus :rgba(25, 65, 120, .4);
+
+   --gradient: linear-gradient(45deg, rgba(55, 130, 255, 1)
+                                 10%, rgba(70, 160, 255, 1)
+                                 25%, rgba(65, 140, 255, 1)
+                                 55%, rgba(55, 130, 255, 1)
+                                 70%, rgba(55, 130, 255, 1)
                                  100%);
 
     --font-grand: 3rem;
     --font-big: 1.4rem;
     --font-normal: 1rem;
-    --font-smali: .85rem;
+    --font-smail: .85rem;
     --font-micro: .75rem;
+    --font-icon-big: 1.8rem;
     --text-light: 300;
     --text-regular: 400;
     --text-bold: 700;
     --text-black: 900;
 }
 
+.c-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    border: .15rem solid var(--color-none);
+    transition: all 0.1s ease;
+}
 
+.c-button:focus {
+    outline: 0;
+    border: .15rem solid var(--color-focus);
+}
 
+.c-button:hover {
+    outline: 0;
+    filter: brightness(90%);
+    border: .15rem solid var(--color-white);
+    transition: all 0.1s ease;
+}
 
+.c-button:active {
+    outline: 0;
+    box-shadow: 0px 0px 4px 2px var(--color-shadow) inset;
+    transition: all 0.1s ease;
+}
+
+.c-button-big {
+    font-size: var(--font-normal);
+    font-weight: var(--text-bold);
+    text-transform: uppercase;
+    color:  var(--color-main);
+    padding: .4rem 2.2rem .4rem 2.2rem;
+}
+
+.c-button-small {
+    font-size: var(--font-micro);
+    font-weight: var(--text-bold);
+    color:  var(--color-dark);
+    padding: 0 1.8rem 0 1.8rem ;
+}
+
+.c-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-icon-big);
+    font-weight: var(--text-bold);
+    color:  var(--color-logo);
+    line-height: .3;
+    padding: 0rem;
+    border: .15rem solid var(--color-none);
+    background-color: var(--color-none);
+    transition: all 0.1s ease;
+}
+
+.c-icon:focus {
+    outline: 0;
+    color: var(--color-focus);
+}
+
+.c-icon:hover {
+    outline: 0;
+    color: var(--color-dark);
+}
+
+.c-icon:active {
+    outline: 0;
+    color: var(--color-white);
+}
