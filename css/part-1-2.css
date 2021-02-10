@@ -1,0 +1,88 @@
+/* HEADER style */
+
+.cookie-panel{
+    display: flex;
+    background-color: var(--color-dark);
+}
+
+.cookie-item {
+    display: flex;
+    font-size: var(--font-micro);
+    font-weight: var(--text-bold);
+    padding: .3rem;
+    color: var(--color-white);
+}
+
+.title-main {
+    background: var(--color-main);
+    background: var(--gradient);
+}
+
+.logo-color {
+    fill: var(--color-logo);
+    opacity: .3;
+}
+
+.title-portret {
+    display: flex;
+    padding-top: 3rem;
+}
+
+.title-h1 {
+    display: flex;
+    font-size: var(--font-grand);
+    font-weight: var(--text-bold);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding-top: 3rem;
+    line-height: 1.3;
+}
+
+.title-h2 {
+    display: flex;
+    font-size: var(--font-grand);
+    font-weight: var(--text-light);
+    text-align: center;
+    color: var(--color-white);
+    padding-top: 4rem;
+    line-height: 1.3;
+}
+
+.title-p {
+    display: flex;
+    font-size: var(--font-normal);
+    font-weight: var(--text-light);
+    text-align: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding-top: 3rem;
+    line-height: 2.4;
+}
+
+.title-button {
+    display: flex;
+    font-size: var(--font-normal);
+    font-weight: var(--text-bold);
+    text-transform: uppercase;
+    padding: 4.5rem .5rem 4.5rem .5rem;
+}
+
+.title-arrow {
+    display: flex;
+    padding: 1.5rem;
+}
+
+/* ABOUT style */
+
+.about-p {
+    display: flex;
+    font-size: var(--font-normal);
+    font-weight: var(--text-regular);
+    text-align: center;
+    color: var(--color-black);
+    padding-top: 2.4rem;
+    padding-bottom: 3rem;
+    line-height: 2.4;
+}

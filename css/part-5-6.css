@@ -1,0 +1,39 @@
+
+/* CLIENTS style */
+
+.clients-conteiner {
+    padding: 3rem 0  3rem 0;
+    background-color: var(--color-white)
+}
+
+.clients-conteiner-in {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+.row-client {
+    flex-direction: row;
+  }
+
+.col {
+    padding-right: 4.2rem;
+}
+
+/* FOOTER style */
+
+.footer-container {
+    background: var(--gradient)
+}
+
+.-wight-light {
+    font-weight: var(--text-light);
+    color: var(--color-white);
+    padding: 0;
+}
+.-wight-bold {
+    font-weight: var(--text-bold);
+    color: var(--color-white);
+    padding: 0;
+}
